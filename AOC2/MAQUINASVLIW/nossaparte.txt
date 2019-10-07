@@ -1,0 +1,87 @@
+﻿Escalonamento por Traces
+
+O algoritmo de Escalonamento por Traces foi originalmente
+proposto por Joseph A. Fisher para a compacta¸c˜ao (i.e., agrupamento das
+opera¸c˜oes em palavras longas) de microprogramas em microinstru¸c˜oes
+horizontais, e se tornou um dos principais m´etodos
+de agendamento de c´odigo para m´aquinas VLIW 
+Neste tipo de escalonamento, uma determinada fun¸c˜ao ´e dividida
+em um conjunto de traces, que representam os caminhos
+com maior probabilidade de execu¸c˜ao. Em um trace, podem
+existir branches condicionais que levam a outros traces
+(portas de sa´ıda) ou transi¸c˜oes de outros traces para ele
+(portas de entrada). As instru¸c˜oes s˜ao ent˜ao escalonadas a
+partir dos traces e ignorando os fluxos de controle, sendo
+necess´ario armazenar as informa¸c˜oes de todas as portas de
+entrada e sa´ıda de cada trace para manter a semˆantica das
+aplica¸c˜oes
+Uma desvantagem do Escalonamento por Traces e Superblocos
+´e que ambos os algoritmos consideram apenas um ´unico
+poss´ıvel caminho de execu¸c˜ao por vez. Portanto, se as informa¸c˜oes
+do profiling levarem `a escolha errada deste caminho,
+haver´a um grande desperd´ıcio de ciclos do processador.
+Para contornar este problema, surgem os algoritmos
+de Escalonamento por Hiperblocos e Escalonamento por
+Arvore de Decis˜ao ´ , descritos a seguir,
+
+
+
+O ganho de desempenho de programas VLIW depende ent˜ao
+diretamente de compiladores capazes de gerar bons agendamentos
+das opera¸c˜oes. Este pr´e-agendamento traz benef´ıcios
+e desvantagens, descritos a seguir
+
+-o compilador tem conhecimento e acesso completo da
+arquitetura do processador, tal como a latˆencia de cada
+unidade funcional. Isto d´a margem a uma vasta gama
+de otimiza¸c˜oes, al´em de dispensar mecanismos de sincroniza¸c˜ao
+em tempo de execu¸c˜ao para impedir inconsistˆencia
+de dados;
+
+- como a an´alise de paralelismo ´e est´atica, ela deve sempre
+considerar o pior caso da execu¸c˜ao do c´odigo. Isto
+implica que informa¸c˜oes obtidas apenas em tempo de
+execu¸c˜ao n˜ao podem ser aproveitados para otimiza¸c˜ao
+de branches
+
+-a densidade de compacta¸c˜ao (taxa de opera¸c˜oes por instru¸c˜ao)
+depende do paralelismo inerente das instru¸c˜oes.
+Se tal densidade for baixa e o escalonador n˜ao for su-
+ficientemente robusto para identific´a-las, haver´a uma
+m´a utiliza¸c˜ao da mem´oria devido ao longo tamanho
+das instru¸c˜oes.
+
+-exige-se uma elevada largura de banda de mem´oria
+que, se n˜ao tratada corretamente, pode levar `a uma
+queda no desempenho das m´aquinas. E importante ´
+que compiladores tenham algum tipo de conhecimento
+pr´evio em rela¸c˜ao `a organiza¸c˜ao do banco de mem´oria,
+a fim de otimizar o acesso utilizando, por exemplo,
+t´ecnicas de entrela¸camento de mem´oria.
+
+
+compiladores
+capazes de fazer com que as unidades funcionais
+permane¸cam o m´ınimo poss´ıvel de tempo ociosas. Assim, o
+escalonamento (ou agendamento) das instru¸c˜oes caracterizase
+como um processo fundamental em compiladores VLIW,
+e cujas caracter´ısticas de alguns m´etodos veremos a seguir.
+H´a basicamente duas classes principais de escalonamento
+est´atico [1]: Escalonamento por Blocos-B´asicos e Escalonamento
+por Blocos-B´asicos Estendido. A primeira classe compreende
+os m´etodos mais tradicionais de agendamento, com
+a subdivis˜ao do programa em blocos b´asicos e verifica¸c˜ao
+de conflitos entre tais blocos. S˜ao muito pouco eficazes no
+caso do VLIW, j´a que habitualmente 14 a 16% dos c´odigos
+representam desvios condicionais ([12]).
+
+
+
+algoritmo proposto por fisher em 1979 compactação de operações em microinstruções horizontais
+predict de caminho 
+profiles de execuções anteriores ou predições estáticas de desvio para ordenar blocos segundo probabilidade de ser executados
+// código de reparo
+insere codigo de reparo em locais onde pode dar merda, se for ruim o predict, diminui desempenho
+
+trace scheduling apresenta dificuldades em laços 
+

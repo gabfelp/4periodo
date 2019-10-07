@@ -1,0 +1,17 @@
+# hades.models.Design file
+#  
+[name] neg
+[components]
+hades.models.rtlib.io.SmallConstant i3 19800 3000 @N 1001 32 00000000000000000000000000000000_B 1.0E-8
+hades.models.rtlib.io.SmallConstant i2 15600 3000 @N 1001 32 00000000000000000000000000000001_B 1.0E-8
+hades.models.rtlib.io.OpinVector i1 20400 9000 @N 1001 32 1.0E-9 0
+hades.models.rtlib.muxes.Mux21 i0 16800 6000 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-8
+hades.models.io.Ipin Entr 14400 7200 @N 1001  U
+[end components]
+[signals]
+hades.signals.SignalStdLogicVector n3 32 2 i0 Y i1 A 2 2 18600 7800 18600 9000 2 18600 9000 20400 9000 0 
+hades.signals.SignalStdLogicVector n2 32 2 i2 Y i0 A1 3 2 16200 4200 16200 4800 2 16200 4800 18000 4800 2 18000 4800 18000 6000 0 
+hades.signals.SignalStdLogicVector n1 32 2 i3 Y i0 A0 3 2 20400 4200 20400 4800 2 20400 4800 19200 4800 2 19200 4800 19200 6000 0 
+hades.signals.SignalStdLogic1164 n0 2 Entr Y i0 S 1 2 14400 7200 16800 7200 0 
+[end signals]
+[end]

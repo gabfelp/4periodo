@@ -1,0 +1,40 @@
+hades.symbols.BboxRectangle  0 0 4800 6000
+hades.symbols.Rectangle  0 0 4800 6000
+hades.symbols.PortLabel 4650 5550 3 o\u0028zero\u0029
+hades.symbols.PortSymbol 4800 5400 o(zero)
+hades.symbols.PortLabel 4650 4950 3 o\u0028regDst\u0029
+hades.symbols.PortSymbol 4800 4800 o(regDst)
+hades.symbols.PortLabel 4650 4350 3 o\u0028writeData\u0029
+hades.symbols.PortSymbol 4800 4200 o(writeData)
+hades.symbols.PortLabel 4650 3750 3 o\u0028aluResult\u0029
+hades.symbols.PortSymbol 4800 3600 o(aluResult)
+hades.symbols.PortLabel 4650 3150 3 o\u0028add\u0029
+hades.symbols.PortSymbol 4800 3000 o(add)
+hades.symbols.PortLabel 4650 2550 3 Branch
+hades.symbols.PortSymbol 4800 2400 Branch
+hades.symbols.PortLabel 4650 1950 3 memRead
+hades.symbols.PortSymbol 4800 1800 memRead
+hades.symbols.PortLabel 4650 1350 3 memWrite
+hades.symbols.PortSymbol 4800 1200 memWrite
+hades.symbols.PortLabel 4650 750 3 o\u0028WB\u0029
+hades.symbols.PortSymbol 4800 600 o(WB)
+hades.symbols.PortLabel 150 5550 zero
+hades.symbols.PortSymbol 0 5400 zero
+hades.symbols.PortLabel 150 4950 regDst
+hades.symbols.PortSymbol 0 4800 regDst
+hades.symbols.PortLabel 150 4350 writeData
+hades.symbols.PortSymbol 0 4200 writeData
+hades.symbols.PortLabel 150 3750 init
+hades.symbols.PortSymbol 0 3600 init
+hades.symbols.PortLabel 150 3150 aluResult
+hades.symbols.PortSymbol 0 3000 aluResult
+hades.symbols.PortLabel 150 2550 add
+hades.symbols.PortSymbol 0 2400 add
+hades.symbols.PortLabel 150 1950 clock
+hades.symbols.PortSymbol 0 1800 clock
+hades.symbols.PortLabel 150 1350 WB
+hades.symbols.PortSymbol 0 1200 WB
+hades.symbols.PortLabel 150 750 M
+hades.symbols.PortSymbol 0 600 M
+hades.symbols.InstanceLabel 150 5850 EXMEM
+hades.symbols.ClassLabel 150 450 EXMEM

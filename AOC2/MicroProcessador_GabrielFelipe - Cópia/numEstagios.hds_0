@@ -1,0 +1,17 @@
+# hades.models.Design file
+#  
+[name] unnamed
+[components]
+hades.models.rtlib.register.RegR estado 14400 13200 @N 1001 16 UUUUUUUUUUUUUUUU_B 1.0E-8
+hades.models.io.Ipin clock 10200 14400 @N 1001  U
+hades.models.rtlib.muxes.Mux21 i3 14400 9000 @N 1001 16 UUUUUUUUUUUUUUUU_B 1.0E-8
+hades.models.rtlib.arith.Add i2 14400 5400 @N 1001 16 UUUUUUUUUUUUUUUU_B 1.0E-8
+hades.models.io.Ipin reset 10200 15600 @N 1001  U
+[end components]
+[signals]
+hades.signals.SignalStdLogic1164 n3 2 clock Y estado CLK 1 2 10200 14400 14400 14400 0 
+hades.signals.SignalStdLogic1164 n2 2 reset Y estado NR 3 2 10200 15600 13800 15600 2 13800 15600 13800 15000 2 13800 15000 14400 15000 0 
+hades.signals.SignalStdLogicVector n1 16 2 i3 Y estado D 1 2 16200 10800 16200 13200 0 
+hades.signals.SignalStdLogicVector n0 16 2 i2 SUM i3 A0 1 2 16800 9000 16800 7800 0 
+[end signals]
+[end]

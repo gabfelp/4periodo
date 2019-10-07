@@ -1,0 +1,36 @@
+# hades.models.Design file
+#  
+[name] MEMWB
+[components]
+hades.models.io.Ipin Clock -8400 13200 @N 1001  U
+hades.models.rtlib.io.OpinVector RegDstOut 5400 16200 @N 1001 5 1.0E-9 0
+hades.models.rtlib.register.RegR i4 16800 12000 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-8
+hades.models.rtlib.register.RegR i3 9600 12000 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-8
+hades.models.io.Ipin Init -8400 15000 @N 1001  U
+hades.models.rtlib.io.IpinVector RegDst 4800 10200 @N 1001 5 UUUUU_B 1.0E-9 0
+hades.models.rtlib.register.RegR i2 3300 12000 @N 1001 5 UUUUU_B 1.0E-8
+hades.models.rtlib.register.RegR i1 -3600 12000 @N 1001 2 UU_B 1.0E-8
+hades.models.rtlib.io.Expander i0 -2400 15600 @N 1001 2 1.0E-8
+hades.models.io.Opin MemToRegOut 0 18600 @N 1001 5.0E-9
+hades.models.rtlib.io.OpinVector ReadDataOut 19200 16200 @N 1001 32 1.0E-9 0
+hades.models.rtlib.io.IpinVector ALUResult 11400 10200 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-9 0
+hades.models.rtlib.io.IpinVector ReadData 18300 10200 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-9 0
+hades.models.rtlib.io.IpinVector WB -2700 10200 @N 1001 2 UU_B 1.0E-9 0
+hades.models.rtlib.io.OpinVector ALUResultOut 12000 16200 @N 1001 32 1.0E-9 0
+hades.models.io.Opin RegWriteOut 0 19800 @N 1001 5.0E-9
+[end components]
+[signals]
+hades.signals.SignalStdLogic1164 n9 2 i0 Y1 RegWriteOut A 2 2 -1800 16800 -1800 19800 2 -1800 19800 0 19800 0 
+hades.signals.SignalStdLogic1164 n8 2 i0 Y0 MemToRegOut A 2 2 -1200 16800 -1200 18600 2 -1200 18600 0 18600 0 
+hades.signals.SignalStdLogicVector n7 2 2 i1 Q i0 A 1 2 -1800 15600 -1800 14400 0 
+hades.signals.SignalStdLogicVector n6 5 2 i2 Q RegDstOut A 2 2 5100 14400 5100 16200 2 5100 16200 5400 16200 0 
+hades.signals.SignalStdLogicVector n5 32 2 i3 Q ALUResultOut A 2 2 11400 14400 11400 16200 2 11400 16200 12000 16200 0 
+hades.signals.SignalStdLogicVector n4 32 2 i4 Q ReadDataOut A 2 2 18600 14400 18600 16200 2 18600 16200 19200 16200 0 
+hades.signals.SignalStdLogicVector n3 32 2 ALUResult Y i3 D 1 2 11400 12000 11400 10200 0 
+hades.signals.SignalStdLogicVector n2 32 2 ReadData Y i4 D 2 2 18600 12000 18600 10200 2 18600 10200 18300 10200 0 
+hades.signals.SignalStdLogicVector n1 5 2 RegDst Y i2 D 2 2 5100 12000 5100 10200 2 5100 10200 4800 10200 0 
+hades.signals.SignalStdLogicVector n0 2 2 WB Y i1 D 2 2 -1800 12000 -1800 10200 2 -1800 10200 -2700 10200 0 
+hades.signals.SignalStdLogic1164 n12 5 Init Y i3 NR i2 NR i4 NR i1 NR 13 2 9600 13800 8400 13800 2 8400 13800 8400 21600 2 3300 13800 2400 13800 2 2400 13800 2400 21600 2 16800 13800 15000 13800 2 15000 13800 15000 21600 2 -4800 21600 -4800 15000 2 -3600 13800 -4800 13800 2 -4800 13800 -4800 15000 2 -4800 15000 -8400 15000 2 -4800 21600 2400 21600 2 15000 21600 8400 21600 2 2400 21600 8400 21600 3 -4800 15000 2400 21600 8400 21600 
+hades.signals.SignalStdLogic1164 n11 5 Clock Y i3 CLK i2 CLK i4 CLK i1 CLK 12 2 9600 13200 8400 13200 2 8400 13200 8400 7200 2 3300 13200 1200 13200 2 1200 13200 1200 7200 2 16800 13200 15000 13200 2 15000 13200 15000 7200 2 -4800 7200 -4800 13200 2 -8400 13200 -4800 13200 2 -3600 13200 -4800 13200 2 -4800 7200 1200 7200 2 15000 7200 8400 7200 2 1200 7200 8400 7200 3 -4800 13200 1200 7200 8400 7200 
+[end signals]
+[end]

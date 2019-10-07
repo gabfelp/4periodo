@@ -1,0 +1,56 @@
+# hades.models.Design file
+#  
+[name] unnamed
+[components]
+hades.models.rtlib.register.RegRE produto 19800 4800 @N 1001 8 00000000_B 1.0E-8
+hades.models.io.Ipin clk 6600 5400 @N 1001 null U
+hades.models.rtlib.register.RegRE estados 28800 6600 @N 1001 4 0000_B 1.0E-8
+hades.models.io.Ipin load 6600 3600 @N 1001 null U
+hades.models.rtlib.register.Reg multiplier 7200 9000 @N 1001 4 0101_B 1.0E-8
+hades.models.gates.And2 i9 10200 17400 @N 1001 1.0E-8
+hades.models.rtlib.io.Expander i8 8400 15600 @N 1001 4 1.0E-8
+hades.models.rtlib.io.SmallConstant i7 15600 10200 @N 1001 4 0000_B 1.0E-8
+hades.models.rtlib.arith.ShiftRightLogic i6 6000 13200 @N 1001 4 1 0010_B 1.0E-8
+hades.models.rtlib.io.SmallConstant i16 28800 13800 @N 1001 4 0100_B 1.0E-8
+hades.models.rtlib.io.IpinVector i5 8400 -600 @N 1001 4 0101_B 1.0E-8 0
+hades.models.rtlib.compare.CompareEqual i15 27000 16200 @N 1001 4 U 1.0E-8
+hades.models.rtlib.muxes.Mux21 i4 7200 2400 @N 1001 4 UUUU_B 1.0E-8
+hades.models.rtlib.io.SmallConstant i14 32400 9000 @N 1001 4 0001_B 1.0E-8
+hades.models.rtlib.muxes.Mux21 i3 13200 0 @N 1001 8 UUUUUUUU_B 1.0E-8
+hades.models.rtlib.arith.Add i13 29400 11400 @N 1001 4 UUUU_B 1.0E-8
+hades.models.rtlib.io.IpinVector i2 14400 -1800 @N 1001 8 00000100_B 1.0E-9 0
+hades.models.gates.InvSmall i12 26400 4800 @N 1001 5.0E-9
+hades.models.rtlib.arith.ShiftLeft i1 21000 0 @N 1001 8 1 00000100_B 1.0E-8
+hades.models.gates.And2 i11 12600 12600 @N 1001 1.0E-8
+hades.models.rtlib.arith.UserDefinedALU i0 18000 10200 @N 1001 8 1.0E-8 16 9 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+hades.models.io.Constant1 i10 7200 18600 @N 1001
+hades.models.io.Ipin reset 6600 6600 @N 1001 null U
+hades.models.rtlib.register.Reg multiplicando 13200 4200 @N 1001 8 00000010_B 1.0E-8
+[end components]
+[signals]
+hades.signals.SignalStdLogic1164 n9 2 i10 Y i9 B 1 2 8400 19200 10200 19200 0 
+hades.signals.SignalStdLogicVector n8 4 2 i4 Y multiplier D 1 2 9000 4200 9000 9000 0 
+hades.signals.SignalStdLogicVector n7 4 2 i5 Y i4 A1 1 2 8400 -600 8400 2400 0 
+hades.signals.SignalStdLogic1164 n6 3 load Y i3 S i4 S 3 2 6600 3600 6600 1200 2 6600 1200 13200 1200 2 6600 3600 7200 3600 1 6600 3600 
+hades.signals.SignalStdLogicVector n19 4 2 i14 Y i13 B 1 2 33000 10200 33000 11400 0 
+hades.signals.SignalStdLogicVector n5 8 2 i3 Y multiplicando D 1 2 15000 1800 15000 4200 0 
+hades.signals.SignalStdLogic1164 n18 5 clk Y estados CLK produto CLK multiplicando CLK multiplier CLK 9 2 28800 7800 17400 7800 2 19800 6000 17400 6000 2 17400 6000 17400 7800 2 17400 7800 12000 7800 2 12000 7800 12000 5400 2 6600 5400 7200 5400 2 7200 5400 7200 10200 2 7200 5400 12000 5400 2 13200 5400 12000 5400 3 12000 5400 17400 7800 7200 5400 
+hades.signals.SignalStdLogicVector n4 8 2 i1 Y i3 A0 4 2 21000 1800 24600 1800 2 24600 1800 24600 -1800 2 24600 -1800 15600 -1800 2 15600 -1800 15600 0 0 
+hades.signals.SignalStdLogic1164 n17 3 i12 Y estados ENA i11 A 9 2 28800 7200 28200 7200 2 28200 5400 28200 7200 2 26400 7200 26400 16200 2 26400 16200 16800 16200 2 16800 16200 16800 12600 2 16800 12600 11400 12600 2 11400 12600 11400 13200 2 11400 13200 12600 13200 2 26400 7200 28200 7200 1 28200 7200 
+hades.signals.SignalStdLogicVector n3 8 2 i2 Y i3 A1 1 2 14400 -1800 14400 0 0 
+hades.signals.SignalStdLogic1164 n16_0 2 i11 Y produto ENA 7 2 16200 13800 16200 12000 2 16200 12000 13800 12000 2 13800 12000 13800 9600 2 13800 9600 18600 9600 2 18600 9600 18600 7800 2 18600 7800 18600 5400 2 18600 5400 19800 5400 0 
+hades.signals.SignalStdLogicVector n16 4 2 i16 Y i15 B 1 2 29400 15000 29400 16200 0 
+hades.signals.SignalStdLogicVector n2 8 2 produto Q i0 B 1 2 21600 7200 21600 10200 0 
+hades.signals.SignalStdLogic1164 n1 3 reset Y estados NR produto NR 7 2 28800 8400 27600 8400 2 7800 6600 19800 6600 2 6600 6600 7800 6600 2 7800 6600 7800 7800 2 7800 7800 7800 9000 2 7800 9000 27600 9000 2 27600 9000 27600 8400 1 7800 6600 
+hades.signals.SignalStdLogic1164 n15 2 i9 Y i11 B 4 2 13800 18600 13800 15600 2 13800 15600 12000 15600 2 12000 15600 12000 14400 2 12000 14400 12600 14400 0 
+hades.signals.SignalStdLogicVector n0 8 3 multiplicando Q i0 A i1 A 7 2 15000 6600 15000 8400 2 18000 8400 19200 8400 2 19200 8400 19200 10200 2 15000 8400 18000 8400 2 18000 8400 18000 -600 2 18000 -600 21000 -600 2 21000 -600 21000 0 1 18000 8400 
+hades.signals.SignalStdLogic1164 n14 2 i8 Y0 i9 A 4 2 10800 16800 10800 17400 2 10800 17400 9600 17400 2 9600 17400 9600 18000 2 9600 18000 10200 18000 0 
+hades.signals.SignalStdLogicVector n13 4 3 multiplier Q i8 A i6 A 4 2 9000 15600 9000 12600 2 9000 11400 9000 12600 2 9000 12600 6000 12600 2 6000 12600 6000 13200 1 9000 12600 
+hades.signals.SignalStdLogicVector n12 8 2 i0 Y produto D 5 2 21600 4800 21600 3600 2 20400 12600 20400 13800 2 20400 13800 25200 13800 2 25200 13800 25200 3600 2 25200 3600 21600 3600 0 
+hades.signals.SignalStdLogicVector n11 4 2 i7 Y i0 OPC 1 2 16200 11400 18000 11400 0 
+hades.signals.SignalStdLogicVector n10 4 2 i6 Y i4 A0 4 2 6000 15000 2400 15000 2 2400 15000 2400 600 2 2400 600 9600 600 2 9600 600 9600 2400 0 
+hades.signals.SignalStdLogicVector n22 4 2 i13 SUM estados D 4 2 31800 13800 36000 13800 2 36000 13800 36000 6000 2 36000 6000 30600 6000 2 30600 6000 30600 6600 0 
+hades.signals.SignalStdLogic1164 n21 2 i15 Y i12 A 4 2 28800 18000 28800 19200 2 28800 19200 25800 19200 2 25800 19200 25800 5400 2 25800 5400 26400 5400 0 
+hades.signals.SignalStdLogicVector n20 4 3 estados Q i15 A i13 A 4 2 28200 16200 28200 10200 2 30600 10200 30600 11400 2 30600 9000 30600 10200 2 30600 10200 28200 10200 1 30600 10200 
+[end signals]
+[end]

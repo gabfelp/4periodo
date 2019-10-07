@@ -1,0 +1,56 @@
+0x0003 = valor j
+0x0005 = v[i]
+0x0006 = v[j]
+0x0007 = aux
+0x0f02 = VETOR
+
+load 0x0f01
+subtract 0x0F00   < 99
+store 0x0001  =99
+store 0x0002 = VALOR DE i
+
+for1: load 0x0002
+	jumpzero fim
+	jump for2
+//	subtract 0x0F00
+//	store 0x0002
+	
+	///
+for2: load 0x0002
+	subtract 0x0F00
+	store 0x0003
+	
+//for2 //	load 0x0002
+	subtract 0x0F00   /// somente para fazer o subtract do i
+	store 0x0002
+	
+	load 0x0003
+	jumpzero for1
+	jump if1
+	
+	////load 0x0002
+	////load 0x0003
+if1:
+    	puti 0x0003
+	load2 0x0F02      // PEGA VJ
+	store2 0x0006
+	
+	
+	puti 0x0002
+	load2 0x0F02      // PEGA O VI
+	store2 0x0005
+	
+	
+	
+//	FAZENDO VJ - VI SE FOR NEGATIVO
+	subtract 0x0006
+	jumpneg for2
+	load 0x0005
+	store 0x0007
+	load 0x0006
+	store 0x0005
+	load 0x0007
+	store 0x0006
+	jump for2
+	
+fim

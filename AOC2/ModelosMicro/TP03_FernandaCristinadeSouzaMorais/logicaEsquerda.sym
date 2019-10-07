@@ -1,0 +1,36 @@
+hades.symbols.BboxRectangle  0 0 4800 6000
+hades.symbols.Rectangle  0 0 4800 6000
+hades.symbols.PortLabel 4650 4350 3 5muxS
+hades.symbols.PortSymbol 4800 4200 5muxS
+hades.symbols.PortLabel 4650 3750 3 4muxS0
+hades.symbols.PortSymbol 4800 3600 4muxS0
+hades.symbols.PortLabel 4650 3150 3 4muxS1
+hades.symbols.PortSymbol 4800 3000 4muxS1
+hades.symbols.PortLabel 4650 2550 3 3muxS
+hades.symbols.PortSymbol 4800 2400 3muxS
+hades.symbols.PortLabel 4650 1950 3 2MuxS0
+hades.symbols.PortSymbol 4800 1800 2MuxS0
+hades.symbols.PortLabel 4650 1350 3 2MuxS1
+hades.symbols.PortSymbol 4800 1200 2MuxS1
+hades.symbols.PortLabel 4650 750 3 RDM-ENA
+hades.symbols.PortSymbol 4800 600 RDM-ENA
+hades.symbols.PortLabel 150 5550 y0
+hades.symbols.PortSymbol 0 5400 y0
+hades.symbols.PortLabel 150 4950 y1
+hades.symbols.PortSymbol 0 4800 y1
+hades.symbols.PortLabel 150 4350 y2
+hades.symbols.PortSymbol 0 4200 y2
+hades.symbols.PortLabel 150 3750 y3
+hades.symbols.PortSymbol 0 3600 y3
+hades.symbols.PortLabel 150 3150 y4
+hades.symbols.PortSymbol 0 3000 y4
+hades.symbols.PortLabel 150 2550 y5
+hades.symbols.PortSymbol 0 2400 y5
+hades.symbols.PortLabel 150 1950 y6
+hades.symbols.PortSymbol 0 1800 y6
+hades.symbols.PortLabel 150 1350 y13
+hades.symbols.PortSymbol 0 1200 y13
+hades.symbols.PortLabel 150 750 y15
+hades.symbols.PortSymbol 0 600 y15
+hades.symbols.InstanceLabel 150 5850 logicaEsquerda
+hades.symbols.ClassLabel 150 450 logicaEsquerda

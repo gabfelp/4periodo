@@ -1,0 +1,19 @@
+int main(int a,intb){
+	if(a>b){
+		return 1;
+	}else{
+		return 0;
+}
+
+int media(int a,int b){
+	return ((a+b)/2)
+}
+
+int laço(int max){
+	int count=0;
+	int i;
+	for (i=0;icmax;i++){
+		count++;
+	}
+	return (count);
+}

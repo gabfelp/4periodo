@@ -1,0 +1,25 @@
+# hades.models.Design file
+#  
+[name] HazardControl
+[components]
+hades.models.rtlib.compare.CompareEqual i4 7800 12000 @N 1001 5 0 1.0E-8
+hades.models.gates.Or2 i3 17400 10800 @N 1001 1.0E-8
+hades.models.io.Opin geraStall 30600 9600 @N 1001 5.0E-9
+hades.models.rtlib.compare.CompareEqual i1 16200 1800 @N 1001 5 1 1.0E-8
+hades.models.gates.And2 i0 24600 8400 @N 1001 1.0E-8
+hades.models.io.Ipin leMemId 11400 3600 @N 1001  U
+hades.models.rtlib.io.IpinVector RegistradorRsIF 11400 5400 @N 1001 5 00001_B 1.0E-9 0
+hades.models.rtlib.io.IpinVector RegistradorRtIF 11400 9000 @N 1001 5 00110_B 1.0E-9 0
+hades.models.rtlib.io.IpinVector RegistradorRtID 11400 7200 @N 1001 5 00001_B 1.0E-9 0
+[end components]
+[signals]
+hades.signals.SignalStdLogic1164 n8 2 i0 Y geraStall A 1 2 28200 9600 30600 9600 0 
+hades.signals.SignalStdLogic1164 n7 2 i3 Y i0 B 3 2 21000 12000 24000 12000 2 24000 12000 24000 10200 2 24000 10200 24600 10200 0 
+hades.signals.SignalStdLogic1164 n6 2 i4 Y i3 B 4 2 9600 13800 9600 15000 2 9600 15000 16200 15000 2 16200 15000 16200 12600 2 16200 12600 17400 12600 0 
+hades.signals.SignalStdLogicVector n5 5 2 RegistradorRtIF Y i4 B 4 2 11400 9000 12000 9000 2 12000 9000 12000 11400 2 12000 11400 10200 11400 2 10200 11400 10200 12000 0 
+hades.signals.SignalStdLogic1164 n4 2 i1 Y i3 A 4 2 18000 3600 18000 9000 2 18000 9000 16200 9000 2 16200 9000 16200 11400 2 16200 11400 17400 11400 0 
+hades.signals.SignalStdLogic1164 n2 2 leMemId Y i0 A 5 2 11400 3600 15600 3600 2 15600 3600 15600 6600 2 15600 6600 20400 6600 2 20400 6600 20400 9000 2 20400 9000 24600 9000 0 
+hades.signals.SignalStdLogicVector n1 5 3 RegistradorRtID Y i1 B i4 A 7 2 11400 7200 13200 7200 2 13200 7200 13200 600 2 13200 600 18600 600 2 18600 600 18600 1800 2 13200 7200 13200 10800 2 13200 10800 9000 10800 2 9000 10800 9000 12000 1 13200 7200 
+hades.signals.SignalStdLogicVector n0 5 2 RegistradorRsIF Y i1 A 4 2 11400 5400 13800 5400 2 13800 5400 13800 1200 2 13800 1200 17400 1200 2 17400 1200 17400 1800 0 
+[end signals]
+[end]

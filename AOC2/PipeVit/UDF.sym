@@ -1,0 +1,20 @@
+hades.symbols.BboxRectangle  0 0 4800 4200
+hades.symbols.Rectangle  0 0 4800 4200
+hades.symbols.PortLabel 4650 1350 3 Fowarding_B
+hades.symbols.PortSymbol 4800 1200 Fowarding_B
+hades.symbols.PortLabel 4650 750 3 Fowarding_A
+hades.symbols.PortSymbol 4800 600 Fowarding_A
+hades.symbols.PortLabel 150 3750 ID/EX_RT
+hades.symbols.PortSymbol 0 3600 ID/EX_RT
+hades.symbols.PortLabel 150 3150 ID/EX_RS
+hades.symbols.PortSymbol 0 3000 ID/EX_RS
+hades.symbols.PortLabel 150 2550 EX/Mem_RegWrite
+hades.symbols.PortSymbol 0 2400 EX/Mem_RegWrite
+hades.symbols.PortLabel 150 1950 Ex/MEM_RD
+hades.symbols.PortSymbol 0 1800 Ex/MEM_RD
+hades.symbols.PortLabel 150 1350 MEM/WB_RegWrite
+hades.symbols.PortSymbol 0 1200 MEM/WB_RegWrite
+hades.symbols.PortLabel 150 750 MEM/WB_RD
+hades.symbols.PortSymbol 0 600 MEM/WB_RD
+hades.symbols.InstanceLabel 150 4050 UDF
+hades.symbols.ClassLabel 150 450 UDF

@@ -1,0 +1,62 @@
+hades.symbols.BboxRectangle  0 0 4800 10800
+hades.symbols.Rectangle  0 0 4800 10800
+hades.symbols.PortLabel 4650 7350 3 26-21_OUT
+hades.symbols.PortSymbol 4800 7200 26-21_OUT
+hades.symbols.PortLabel 4650 6750 3 11_15_OUT
+hades.symbols.PortSymbol 4800 6600 11_15_OUT
+hades.symbols.PortLabel 4650 6150 3 M
+hades.symbols.PortSymbol 4800 6000 M
+hades.symbols.PortLabel 4650 5550 3 WB
+hades.symbols.PortSymbol 4800 5400 WB
+hades.symbols.PortLabel 4650 4950 3 20_16_OUT
+hades.symbols.PortSymbol 4800 4800 20_16_OUT
+hades.symbols.PortLabel 4650 4350 3 15_0\u002832\u0029_OUT
+hades.symbols.PortSymbol 4800 4200 15_0(32)_OUT
+hades.symbols.PortLabel 4650 3750 3 RegDst_Out
+hades.symbols.PortSymbol 4800 3600 RegDst_Out
+hades.symbols.PortLabel 4650 3150 3 AluSrc_Out
+hades.symbols.PortSymbol 4800 3000 AluSrc_Out
+hades.symbols.PortLabel 4650 2550 3 RD2_OUT
+hades.symbols.PortSymbol 4800 2400 RD2_OUT
+hades.symbols.PortLabel 4650 1950 3 RD1_OUT
+hades.symbols.PortSymbol 4800 1800 RD1_OUT
+hades.symbols.PortLabel 4650 1350 3 Alu_OP_Out
+hades.symbols.PortSymbol 4800 1200 Alu_OP_Out
+hades.symbols.PortLabel 4650 750 3 ID_OUT
+hades.symbols.PortSymbol 4800 600 ID_OUT
+hades.symbols.PortLabel 150 10350 init
+hades.symbols.PortSymbol 0 10200 init
+hades.symbols.PortLabel 150 9750 26-21
+hades.symbols.PortSymbol 0 9600 26-21
+hades.symbols.PortLabel 150 9150 11_15
+hades.symbols.PortSymbol 0 9000 11_15
+hades.symbols.PortLabel 150 8550 Branch
+hades.symbols.PortSymbol 0 8400 Branch
+hades.symbols.PortLabel 150 7950 20_16
+hades.symbols.PortSymbol 0 7800 20_16
+hades.symbols.PortLabel 150 7350 RegWrite
+hades.symbols.PortSymbol 0 7200 RegWrite
+hades.symbols.PortLabel 150 6750 MemRead
+hades.symbols.PortSymbol 0 6600 MemRead
+hades.symbols.PortLabel 150 6150 MemToReg
+hades.symbols.PortSymbol 0 6000 MemToReg
+hades.symbols.PortLabel 150 5550 MemWrite
+hades.symbols.PortSymbol 0 5400 MemWrite
+hades.symbols.PortLabel 150 4950 15_0\u002832\u0029
+hades.symbols.PortSymbol 0 4800 15_0(32)
+hades.symbols.PortLabel 150 4350 RD2
+hades.symbols.PortSymbol 0 4200 RD2
+hades.symbols.PortLabel 150 3750 RegDst
+hades.symbols.PortSymbol 0 3600 RegDst
+hades.symbols.PortLabel 150 3150 AluSrc
+hades.symbols.PortSymbol 0 3000 AluSrc
+hades.symbols.PortLabel 150 2550 RD1
+hades.symbols.PortSymbol 0 2400 RD1
+hades.symbols.PortLabel 150 1950 Alu_OP
+hades.symbols.PortSymbol 0 1800 Alu_OP
+hades.symbols.PortLabel 150 1350 ID
+hades.symbols.PortSymbol 0 1200 ID
+hades.symbols.PortLabel 150 750 clk
+hades.symbols.PortSymbol 0 600 clk
+hades.symbols.InstanceLabel 150 10650 Id/EX
+hades.symbols.ClassLabel 150 450 Id/EX

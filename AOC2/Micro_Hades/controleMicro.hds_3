@@ -1,0 +1,46 @@
+# hades.models.Design file
+#  
+[name] controleMicro
+[components]
+hades.models.rtlib.io.MergeBits i8 27600 21000 @N 1001 3 1.0E-8
+hades.models.rtlib.io.Constant i7 10200 8400 @N 1001 8 00000001_B 1.0E-8
+hades.models.io.Ipin i6 11400 7200 @N 1001 null U
+hades.models.rtlib.arith.Add i5 13800 10800 @N 1001 8 00110101_B 1.0E-8
+hades.models.rtlib.io.MergeBits i4 25200 19200 @N 1001 3 1.0E-8
+hades.models.rtlib.io.MergeBits i3 29400 15600 @N 1001 2 1.0E-8
+hades.models.rtlib.io.OpinVector rdestino 40200 17400 @N 1001 3 1.0E-9 0
+hades.models.rtlib.io.Expander i2 25800 13200 @N 1001 12 1.0E-8
+hades.models.rtlib.io.OpinVector instrucao 32400 18600 @N 1001 2 1.0E-9 0
+hades.models.rtlib.memory.ROM i1 23400 6600 @N 1001 256 12 
+hades.models.io.Ipin i0 10200 6000 @N 1001 null U
+hades.models.rtlib.io.OpinVector rfonte2 30600 24000 @N 1001 3 1.0E-9 0
+hades.models.rtlib.io.OpinVector rfonte1 29400 26400 @N 1001 3 1.0E-9 0
+hades.models.rtlib.register.RegR pc 13800 4800 @N 1001 8 00110100_B 1.0E-8
+hades.models.io.Opin valido 32400 17400 @N 1001 5.0E-9
+hades.models.rtlib.io.MergeBits i9 34200 16200 @N 1001 3 1.0E-8
+[end components]
+[signals]
+hades.signals.SignalStdLogic1164 n9 2 i2 Y11 i4 A2 3 2 26400 14400 26400 17400 2 26400 17400 25800 17400 2 25800 17400 25800 19200 0 
+hades.signals.SignalStdLogicVector n8 8 2 i5 SUM pc D 5 2 16200 13200 16200 15000 2 16200 15000 20400 15000 2 20400 15000 20400 3600 2 20400 3600 15600 3600 2 15600 3600 15600 4800 0 
+hades.signals.SignalStdLogic1164 n7 2 i6 Y pc NR 3 2 11400 7200 12600 7200 2 12600 7200 12600 6600 2 12600 6600 13800 6600 0 
+hades.signals.SignalStdLogicVector n6 8 2 i7 Y i5 A 2 2 12000 10200 12000 10800 2 12000 10800 15000 10800 0 
+hades.signals.SignalStdLogic1164 n19 2 i2 Y1 i9 A1 3 2 32400 14400 33000 15000 2 33000 15000 35400 15000 2 35400 15000 35400 16200 0 
+hades.signals.SignalStdLogicVector n5 2 2 i3 Y instrucao A 2 2 30000 16800 30000 18600 2 30000 18600 32400 18600 0 
+hades.signals.SignalStdLogic1164 n18 2 i2 Y2 i9 A2 3 2 31800 14400 32400 15600 2 32400 15600 34800 15600 2 34800 15600 34800 16200 0 
+hades.signals.SignalStdLogic1164 n4 2 i2 Y5 i3 A1 1 2 30000 14400 30000 15600 0 
+hades.signals.SignalStdLogic1164 n17 2 i2 Y3 valido A 4 2 31200 14400 31200 15000 2 31200 15000 31800 15000 2 31800 15000 31800 17400 2 31800 17400 32400 17400 0 
+hades.signals.SignalStdLogic1164 n3 2 i2 Y4 i3 A0 1 2 30600 14400 30600 15600 0 
+hades.signals.SignalStdLogicVector n2 12 2 i1 D i2 A 3 2 27000 11400 27000 12000 2 27000 12000 26400 12000 2 26400 12000 26400 13200 0 
+hades.signals.SignalStdLogic1164 n16 2 i2 Y6 i8 A0 1 2 29400 14400 29400 21000 0 
+hades.signals.SignalStdLogic1164 n1 2 i0 Y pc CLK 1 2 10200 6000 13800 6000 0 
+hades.signals.SignalStdLogic1164 n15 2 i2 Y7 i8 A1 1 2 28800 14400 28800 21000 0 
+hades.signals.SignalStdLogicVector n0 8 3 pc Q i1 A i5 B 4 2 15600 7200 15600 9000 2 17400 9000 23400 9000 2 15600 9000 17400 9000 2 17400 9000 17400 10800 1 17400 9000 
+hades.signals.SignalStdLogic1164 n14 2 i2 Y8 i8 A2 1 2 28200 21000 28200 14400 0 
+hades.signals.SignalStdLogicVector n13 3 2 i8 Y rfonte2 A 2 2 28200 22200 28200 24000 2 28200 24000 30600 24000 0 
+hades.signals.SignalStdLogicVector n12 3 2 i4 Y rfonte1 A 2 2 25800 20400 25800 26400 2 25800 26400 29400 26400 0 
+hades.signals.SignalStdLogic1164 n11 2 i2 Y9 i4 A0 3 2 27600 14400 27600 18600 2 27600 18600 27000 18600 2 27000 18600 27000 19200 0 
+hades.signals.SignalStdLogic1164 n10 2 i2 Y10 i4 A1 3 2 27000 14400 27000 18000 2 27000 18000 26400 18000 2 26400 18000 26400 19200 0 
+hades.signals.SignalStdLogicVector n21 3 2 i9 Y rdestino A 1 2 34800 17400 40200 17400 0 
+hades.signals.SignalStdLogic1164 n20 2 i2 Y0 i9 A0 2 2 33000 14400 36000 14400 2 36000 14400 36000 16200 0 
+[end signals]
+[end]

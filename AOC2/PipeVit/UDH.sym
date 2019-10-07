@@ -1,0 +1,14 @@
+hades.symbols.BboxRectangle  0 0 4800 3000
+hades.symbols.Rectangle  0 0 4800 3000
+hades.symbols.PortLabel 4650 750 3 Stall
+hades.symbols.PortSymbol 4800 600 Stall
+hades.symbols.PortLabel 150 2550 Id/Ex.MemRead
+hades.symbols.PortSymbol 0 2400 Id/Ex.MemRead
+hades.symbols.PortLabel 150 1950 If/Id.RegisterRS
+hades.symbols.PortSymbol 0 1800 If/Id.RegisterRS
+hades.symbols.PortLabel 150 1350 If/Id.RegisterRT
+hades.symbols.PortSymbol 0 1200 If/Id.RegisterRT
+hades.symbols.PortLabel 150 750 Id/ex.RegisterRT
+hades.symbols.PortSymbol 0 600 Id/ex.RegisterRT
+hades.symbols.InstanceLabel 150 2850 UDH
+hades.symbols.ClassLabel 150 450 UDH

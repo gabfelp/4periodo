@@ -1,0 +1,28 @@
+# hades.models.Design file
+#  
+[name] unnamed
+[components]
+hades.models.rtlib.io.OpinVector FORWARDINGA 37800 19800 @N 1001 2 1.0E-9 0
+hades.models.rtlib.io.IpinVector IDEX-RT 10800 7200 @N 1001 16 0000000000000010_B 1.0E-9 0
+hades.models.rtlib.io.IpinVector IDEX-RS 10800 6000 @N 1001 5 00010_B 1.0E-9 0
+hades.models.io.Ipin MEMWB-REGWRITE 10800 8400 @N 1001  U
+hades.models.io.Ipin EXMEM-REGWRITE 10800 9600 @N 1001  U
+hades.models.rtlib.io.IpinVector EX/MEM-RD 10800 4800 @N 1001 5 00111_B 1.0E-9 0
+hades.models.gates.And3 i9 27000 22800 @N 1001 1.0E-8
+hades.models.gates.And3 i8 27000 20400 @N 1001 1.0E-8
+hades.models.gates.And3 i7 27000 18000 @N 1001 1.0E-8
+hades.models.gates.And3 i6 27000 15600 @N 1001 1.0E-8
+hades.models.rtlib.compare.CompareEqual i5 33000 11400 @N 1001 16 U 1.0E-8
+hades.models.rtlib.compare.CompareEqual i4 30600 6000 @N 1001 16 U 1.0E-8
+hades.models.rtlib.compare.CompareEqual i3 24000 8400 @N 1001 16 U 1.0E-8
+hades.models.rtlib.compare.CompareEqual i2 20400 12000 @N 1001 16 U 1.0E-8
+hades.models.rtlib.compare.CompareEqual i1 15000 8400 @N 1001 16 U 1.0E-8
+hades.models.rtlib.io.MergeBits i11 35400 21600 @N 1001 2 1.0E-8
+hades.models.rtlib.io.Constant i0 18600 600 @N 1001 5 00000_B 1.0E-8
+hades.models.rtlib.io.MergeBits i10 35400 17400 @N 1001 2 1.0E-8
+hades.models.rtlib.io.IpinVector MEM/WB-RD 10800 3600 @N 1001 5 00100_B 1.0E-9 0
+hades.models.rtlib.io.OpinVector FORWARDINGB 37800 24600 @N 1001 2 1.0E-9 0
+[end components]
+[signals]
+[end signals]
+[end]

@@ -1,0 +1,63 @@
+# hades.models.Design file
+#  
+[name] exception
+[components]
+hades.models.rtlib.register.RegR i21 52500 26400 @N 1001 32 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX_B 1.0E-8
+hades.models.io.Ipin ALUOverflow 36300 30000 @N 1001  U
+hades.models.io.Opin EXFlush 44400 38400 @N 1001 5.0E-9
+hades.models.io.Ipin Clock 36000 33600 @N 1001  U
+hades.models.rtlib.io.SmallConstant i9 16800 14700 @N 1001 6 101011_B 1.0E-8
+hades.models.gates.Or2 i19 38400 37200 @N 1001 1.0E-8
+hades.models.rtlib.io.SmallConstant i8 12600 14700 @N 1001 6 000010_B 1.0E-8
+hades.models.rtlib.register.RegR i18 39000 32700 @N 1001 5 XXXXX_B 1.0E-8
+hades.models.rtlib.io.SmallConstant i7 8400 14700 @N 1001 6 000100_B 1.0E-8
+hades.models.rtlib.io.OpinVector Causa 42000 36300 @N 1001 5 1.0E-9 0
+hades.models.rtlib.io.SmallConstant i17 40200 25200 @N 1001 5 01100_B 1.0E-8
+hades.models.rtlib.io.SmallConstant i6 3900 14700 @N 1001 6 100011_B 1.0E-8
+hades.models.rtlib.io.SmallConstant i16 38100 25200 @N 1001 5 01010_B 1.0E-8
+hades.models.rtlib.io.SmallConstant i5 -600 14700 @N 1001 6 000000_B 1.0E-8
+hades.models.rtlib.io.SmallConstant i15 42000 25200 @N 1001 5 00000_B 1.0E-8
+hades.models.rtlib.compare.CompareEqual i4 15000 19200 @N 1001 6 0 1.0E-8
+hades.models.rtlib.muxes.Mux41 i14 38400 28800 @N 1001 5 UUUUU_B 1.0E-8
+hades.models.rtlib.compare.CompareEqual i3 10800 19200 @N 1001 6 0 1.0E-8
+hades.models.gates.Nor2 i13 33600 24000 @N 1001 1.0E-8
+hades.models.rtlib.compare.CompareEqual i2 6600 19200 @N 1001 6 0 1.0E-8
+hades.models.gates.Or2 i12 27600 27300 @N 1001 1.0E-8
+hades.models.rtlib.compare.CompareEqual i1 2100 19200 @N 1001 6 0 1.0E-8
+hades.models.gates.Or2 i11 19200 25200 @N 1001 1.0E-8
+hades.models.rtlib.compare.CompareEqual i0 -2400 19200 @N 1001 6 0 1.0E-8
+hades.models.gates.Or2 i10 19200 21600 @N 1001 1.0E-8
+hades.models.io.Ipin init 36000 35400 @N 1001  U
+hades.models.rtlib.io.IpinVector PC 53400 24600 @N 1001 32 00000000000000000000000000000110_B 1.0E-9 0
+hades.models.rtlib.io.IpinVector OpCode -4800 18600 @N 1001 6 000101_B 1.0E-9 0
+hades.models.rtlib.io.OpinVector EPC 55200 30600 @N 1001 32 1.0E-9 0
+[end components]
+[signals]
+hades.signals.SignalStdLogic1164 n9 2 i1 Y i11 B 2 2 3900 21000 3900 27000 2 3900 27000 19200 27000 0 
+hades.signals.SignalStdLogic1164 n8 2 i2 Y i11 A 2 2 8400 21000 8400 25800 2 8400 25800 19200 25800 0 
+hades.signals.SignalStdLogic1164 n7 2 i3 Y i10 B 2 2 12600 21000 12600 23400 2 12600 23400 19200 23400 0 
+hades.signals.SignalStdLogic1164 n6 2 i4 Y i10 A 2 2 16800 21000 16800 22200 2 16800 22200 19200 22200 0 
+hades.signals.SignalStdLogicVector n19 5 2 i14 Y i18 D 1 2 40800 30600 40800 32700 0 
+hades.signals.SignalStdLogicVector n5 6 2 i9 Y i4 B 1 2 17400 15900 17400 19200 0 
+hades.signals.SignalStdLogicVector n18 5 3 i16 Y i14 A3 i14 A2 5 2 39000 28800 39000 27600 2 40200 28800 40200 27600 2 38700 27600 38700 26400 2 40200 27600 39000 27600 2 38700 27600 39000 27600 1 39000 27600 
+hades.signals.SignalStdLogicVector n4 6 2 i8 Y i3 B 1 2 13200 19200 13200 15900 0 
+hades.signals.SignalStdLogicVector n17 32 2 PC Y i21 D 2 2 53400 24600 54300 24600 2 54300 24600 54300 26400 0 
+hades.signals.SignalStdLogicVector n3 6 6 OpCode Y i3 A i2 A i4 A i1 A i0 A 10 2 12000 19200 12000 18600 2 7800 19200 7800 18600 2 16200 19200 16200 18600 2 3300 19200 3300 18600 2 3300 18600 -1200 18600 2 -4800 18600 -1200 18600 2 -1200 18600 -1200 19200 2 3300 18600 7800 18600 2 16200 18600 12000 18600 2 7800 18600 12000 18600 4 3300 18600 -1200 18600 7800 18600 12000 18600 
+hades.signals.SignalStdLogicVector n2 6 2 i7 Y i2 B 1 2 9000 15900 9000 19200 0 
+hades.signals.SignalStdLogicVector n16 5 2 i17 Y i14 A1 3 2 40800 26400 40800 27600 2 40800 27600 41400 27600 2 41400 27600 41400 28800 0 
+hades.signals.SignalStdLogic1164 n15 3 ALUOverflow Y i19 B i14 S0 4 2 38400 39000 36900 39000 2 36900 39000 36900 30000 2 38400 30000 36900 30000 2 36300 30000 36900 30000 1 36900 30000 
+hades.signals.SignalStdLogicVector n1 6 2 i6 Y i1 B 1 2 4500 19200 4500 15900 0 
+hades.signals.SignalStdLogicVector n0 6 2 i5 Y i0 B 1 2 0 15900 0 19200 0 
+hades.signals.SignalStdLogicVector n14 5 2 i15 Y i14 A0 1 2 42600 26400 42600 28800 0 
+hades.signals.SignalStdLogic1164 n13 2 i10 Y i13 A 3 2 33600 24600 25500 24600 2 25500 24600 25500 22800 2 25500 22800 22800 22800 0 
+hades.signals.SignalStdLogic1164 n12 2 i12 Y i13 B 3 2 31200 28500 32400 28500 2 32400 28500 32400 25800 2 32400 25800 33600 25800 0 
+hades.signals.SignalStdLogic1164 n11 2 i11 Y i12 A 3 2 22800 26400 26400 26400 2 26400 26400 26400 27900 2 26400 27900 27600 27900 0 
+hades.signals.SignalStdLogic1164 n10 2 i0 Y i12 B 2 2 27600 29100 -600 29100 2 -600 29100 -600 21000 0 
+hades.signals.SignalStdLogicVector n25 32 2 i21 Q EPC A 2 2 54300 28800 54300 30600 2 54300 30600 55200 30600 0 
+hades.signals.SignalStdLogicVector n24 5 2 i18 Q Causa A 2 2 40800 35100 40800 36300 2 40800 36300 42000 36300 0 
+hades.signals.SignalStdLogic1164 n23 2 i19 Y EXFlush A 1 2 44400 38400 42000 38400 0 
+hades.signals.SignalStdLogic1164 n22 3 init Y i21 NR i18 NR 6 2 52500 28200 51600 28200 2 51600 28200 51600 35400 2 51600 35400 38400 35400 2 36000 35400 38400 35400 2 38400 35400 38400 34500 2 38400 34500 39000 34500 1 38400 35400 
+hades.signals.SignalStdLogic1164 n21 3 Clock Y i21 CLK i18 CLK 8 2 52500 27600 50400 27600 2 50400 27600 50400 31800 2 50400 31800 37800 31800 2 37800 31800 37800 33900 2 36600 33900 36600 33600 2 36600 33600 36000 33600 2 39000 33900 37800 33900 2 36600 33900 37800 33900 1 37800 33900 
+hades.signals.SignalStdLogic1164 n20 3 i13 Y i19 A i14 S1 5 2 38400 37800 37500 37800 2 37500 37800 37500 29400 2 38400 29400 37500 29400 2 37200 25200 37500 25200 2 37500 25200 37500 29400 1 37500 29400 
+[end signals]
+[end]

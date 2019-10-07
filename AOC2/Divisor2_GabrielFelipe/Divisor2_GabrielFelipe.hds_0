@@ -1,0 +1,30 @@
+# hades.models.Design file
+#  
+[name] unnamed
+[components]
+hades.models.io.Ipin ld 10800 1200 @N 1001  U
+hades.models.io.Ipin rest 9000 7200 @N 1001  U
+hades.models.rtlib.io.IpinVector divisor 18600 4200 @N 1001 8 UUUUUUUU_B 1.0E-9 0
+hades.models.rtlib.io.SmallConstant i4 39000 0 @N 1001 8 00000000_B 1.0E-8
+hades.models.rtlib.arith.Add i3 36000 2400 @N 1001 8 UUUUUUUU_B 1.0E-8
+hades.models.rtlib.arith.Sub i2 19800 12000 @N 1001 8 UUUUUUUU_B 1.0E-8
+hades.models.rtlib.muxes.Mux21 i1 22800 0 @N 1001 8 UUUUUUUU_B 1.0E-8
+hades.models.rtlib.compare.CompareGreater i0 18600 8400 @N 1001 8 U 1.0E-8
+hades.models.rtlib.register.RegRE resto 22800 3000 @N 1001 8 UUUUUUUU_B 1.0E-8
+hades.models.io.Ipin cl 9000 5400 @N 1001  U
+hades.models.rtlib.io.IpinVector dividendo 24000 -1200 @N 1001 8 00000101_B 1.0E-9 0
+hades.models.rtlib.register.RegRE result 31200 4800 @N 1001 8 UUUUUUUU_B 1.0E-8
+[end components]
+[signals]
+hades.signals.SignalStdLogicVector n8 8 2 i3 SUM result D 5 2 38400 4800 38400 6000 2 38400 6000 42000 6000 2 42000 6000 42000 -600 2 42000 -600 33000 -600 2 33000 -600 33000 4800 0 
+hades.signals.SignalStdLogicVector n7 8 2 i4 Y i3 B 1 2 39600 2400 39600 1200 0 
+hades.signals.SignalStdLogicVector n6 8 2 result Q i3 A 5 2 33000 7200 33000 8400 2 33000 8400 35400 8400 2 35400 8400 35400 1800 2 35400 1800 37200 1800 2 37200 1800 37200 2400 0 
+hades.signals.SignalStdLogicVector n5 8 2 i2 SUM i1 A0 5 2 22200 14400 22200 15600 2 22200 15600 28800 15600 2 28800 15600 28800 -1200 2 28800 -1200 25200 -1200 2 25200 -1200 25200 0 0 
+hades.signals.SignalStdLogicVector n4 8 3 divisor Y i2 A i0 A 6 2 21000 12000 18000 12000 2 18000 12000 18000 7200 2 18000 7200 19800 7200 2 18600 4200 19800 4200 2 19800 8400 19800 7200 2 19800 4200 19800 7200 1 19800 7200 
+hades.signals.SignalStdLogicVector n3 8 3 resto Q i2 B i0 B 5 2 23400 12000 23400 8400 2 23400 8400 21000 8400 2 21000 8400 21000 6600 2 24600 5400 24600 6600 2 24600 6600 21000 6600 1 21000 8400 
+hades.signals.SignalStdLogicVector n2 8 2 i1 Y resto D 1 2 24600 1800 24600 3000 0 
+hades.signals.SignalStdLogic1164 n1 2 ld Y i1 S 1 2 10800 1200 22800 1200 0 
+hades.signals.SignalStdLogicVector n0 8 2 dividendo Y i1 A1 1 2 24000 -1200 24000 0 0 
+hades.signals.SignalStdLogic1164 n10 3 cl Y result CLK resto CLK 5 2 31200 6000 21600 6000 2 21600 6000 21600 5400 2 9000 5400 21600 5400 2 21600 5400 21600 4200 2 21600 4200 22800 4200 1 21600 5400 
+[end signals]
+[end]

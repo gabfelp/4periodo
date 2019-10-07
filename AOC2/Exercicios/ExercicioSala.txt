@@ -1,0 +1,9 @@
+int pesquisa(int v[],int n, int chave){
+	int i =0;
+	for(i=0;i<n;i++){
+		if(v[i]==chave){
+			return(1);
+		}
+	}
+	return(0);
+}

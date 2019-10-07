@@ -1,0 +1,43 @@
+área de dados -> inicia em 0x0100
+área de código -> inicia em 0x0000
+vetor inicia em 0x0103
+
+0x0f00=1
+0x0f01=100
+0x0f02=0x0203 (final do vetor)
+
+for(i=0; i<99; i++){
+	for(j=i+1; j < 100; j++){
+		if(v[i]>v[j]){
+			aux = v[i];
+			v[i]=v[j];
+			v[j]=aux;
+		}
+	}
+}
+
+load 0x0f00
+subtract 0x0f00
+store 0x0101
+
+(for1)
+load 0x0101
+subtract 0x0f01
+add 0x0f00
+JUMPZERO (endfor1)
+	(for2)
+	load 0x0101
+	add 0x0f00
+	store 0x0102
+	subtract 0x0f01
+	JUMPZERO (endfor2)
+	load 0x0102
+	
+
+
+	(endfor2)
+load 0x0101
+add 0x0f00
+store 0x0101
+JUMP 0x0003
+(end for1)

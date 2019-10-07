@@ -1,0 +1,36 @@
+hades.symbols.BboxRectangle  0 0 4800 8400
+hades.symbols.Rectangle  0 0 4800 8400
+hades.symbols.PortLabel 4650 7950 3 OrigPC1
+hades.symbols.PortSymbol 4800 7800 OrigPC1
+hades.symbols.PortLabel 4650 7350 3 PCWriteCond
+hades.symbols.PortSymbol 4800 7200 PCWriteCond
+hades.symbols.PortLabel 4650 6750 3 OrigAALU
+hades.symbols.PortSymbol 4800 6600 OrigAALU
+hades.symbols.PortLabel 4650 6150 3 RegDst
+hades.symbols.PortSymbol 4800 6000 RegDst
+hades.symbols.PortLabel 4650 5550 3 RegWrite
+hades.symbols.PortSymbol 4800 5400 RegWrite
+hades.symbols.PortLabel 4650 4950 3 OpALU1
+hades.symbols.PortSymbol 4800 4800 OpALU1
+hades.symbols.PortLabel 4650 4350 3 MemWrite
+hades.symbols.PortSymbol 4800 4200 MemWrite
+hades.symbols.PortLabel 4650 3750 3 MemToReg
+hades.symbols.PortSymbol 4800 3600 MemToReg
+hades.symbols.PortLabel 4650 3150 3 MemRead
+hades.symbols.PortSymbol 4800 3000 MemRead
+hades.symbols.PortLabel 4650 2550 3 louD
+hades.symbols.PortSymbol 4800 2400 louD
+hades.symbols.PortLabel 4650 1950 3 OrigBALU1
+hades.symbols.PortSymbol 4800 1800 OrigBALU1
+hades.symbols.PortLabel 4650 1350 3 PCWrite
+hades.symbols.PortSymbol 4800 1200 PCWrite
+hades.symbols.PortLabel 4650 750 3 IRWrite
+hades.symbols.PortSymbol 4800 600 IRWrite
+hades.symbols.PortLabel 150 1950 Clock
+hades.symbols.PortSymbol 0 1800 Clock
+hades.symbols.PortLabel 150 1350 zera
+hades.symbols.PortSymbol 0 1200 zera
+hades.symbols.PortLabel 150 750 OP
+hades.symbols.PortSymbol 0 600 OP
+hades.symbols.InstanceLabel 150 8250 ControleMulti
+hades.symbols.ClassLabel 150 450 ControleMulti

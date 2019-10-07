@@ -1,0 +1,44 @@
+# hades.models.Design file
+#  
+[name] unnamed
+[components]
+hades.models.rtlib.register.Reg produto 18600 10200 @N 1001 8 00011100_B 1.0E-8
+hades.models.io.Ipin clk 5400 1800 @N 1001  U
+hades.models.io.Ipin load 5400 0 @N 1001  U
+hades.models.rtlib.register.Reg multiplier 10800 1800 @N 1001 8 00000000_B 1.0E-8
+hades.models.rtlib.arith.ShiftLeft i9 25800 -2400 @N 1001 8 1 00000000_B 1.0E-8
+hades.models.rtlib.io.SmallConstant i8 27000 5400 @N 1001 8 00000000_B 1.0E-8
+hades.models.rtlib.register.Reg multiplicando1 18000 600 @N 1001 8 00000000_B 1.0E-8
+hades.models.rtlib.muxes.Mux21 i7 23400 8400 @N 1001 8 00011100_B 1.0E-8
+hades.models.rtlib.io.IpinVector valor2 12000 -2400 @N 1001 8 00000111_B 1.0E-9 0
+hades.models.rtlib.arith.ShiftRightArith i6 5400 9600 @N 1001 8 1 00000000_B 1.0E-8
+hades.models.rtlib.muxes.Mux21 i5 10800 -1200 @N 1001 8 00000000_B 1.0E-8
+hades.models.rtlib.io.Expander i4 3000 5400 @N 1001 8 1.0E-8
+hades.models.rtlib.io.SmallConstant i3 26400 1200 @N 1001 8 00000000_B 1.0E-8
+hades.models.rtlib.muxes.Mux21 i2 20400 3600 @N 1001 8 00000000_B 1.0E-8
+hades.models.rtlib.io.SmallConstant i1 15000 4800 @N 1001 4 0000_B 1.0E-8
+hades.models.rtlib.arith.UserDefinedALU i0 18000 6600 @N 1001 8 1.0E-8 16 9 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+hades.models.rtlib.muxes.Mux21 i10 19200 -3000 @N 1001 8 00000000_B 1.0E-8
+hades.models.rtlib.io.IpinVector multiplicando 20400 -4200 @N 1001 8 00000100_B 1.0E-9 0
+[end components]
+[signals]
+hades.signals.SignalStdLogic1164 n9 2 i4 Y0 i2 S 4 2 7800 6600 7800 7200 2 7800 7200 13800 7200 2 13800 7200 13800 4800 2 13800 4800 20400 4800 0 
+hades.signals.SignalStdLogicVector n8 8 2 i6 Y i5 A0 5 2 13200 -1200 13200 -1800 2 13200 -1800 15000 -1800 2 15000 -1800 15000 13200 2 15000 13200 5400 13200 2 5400 13200 5400 11400 0 
+hades.signals.SignalStdLogicVector n7 8 2 i5 Y multiplier D 1 2 12600 1800 12600 600 0 
+hades.signals.SignalStdLogicVector n6 8 2 valor2 Y i5 A1 1 2 12000 -2400 12000 -1200 0 
+hades.signals.SignalStdLogicVector n5 8 2 i10 Y multiplicando1 D 4 2 21000 -1200 21000 -600 2 21000 -600 19800 -600 2 19800 -600 19800 0 2 19800 0 19800 600 0 
+hades.signals.SignalStdLogicVector n4 8 3 multiplier Q i4 A i6 A 6 2 12600 4200 12600 4800 2 12600 4800 3600 4800 2 3600 4800 3600 5400 2 12600 4800 12600 8400 2 12600 8400 5400 8400 2 5400 8400 5400 9600 1 12600 4800 
+hades.signals.SignalStdLogic1164 n17 4 load Y i10 S i5 S i7 S 8 2 19200 -1800 8400 -1800 2 8400 -1800 8400 0 2 8400 0 10800 0 2 5400 0 8400 0 2 8400 0 8400 4200 2 8400 4200 10200 4200 2 10200 4200 10200 9600 2 10200 9600 23400 9600 1 8400 0 
+hades.signals.SignalStdLogicVector n3 8 2 i3 Y i2 A0 3 2 27000 2400 27000 3000 2 27000 3000 22800 3000 2 22800 3000 22800 3600 0 
+hades.signals.SignalStdLogicVector n2 8 2 i9 Y i10 A0 5 2 25800 -600 25800 0 2 25800 0 28200 0 2 28200 0 28200 -3600 2 28200 -3600 21600 -3600 2 21600 -3600 21600 -3000 0 
+hades.signals.SignalStdLogicVector n16 8 2 i0 Y i7 A0 3 2 25800 8400 23400 8400 2 20400 9000 23400 9000 2 23400 9000 23400 8400 0 
+hades.signals.SignalStdLogicVector n1 8 3 multiplicando1 Q i2 A1 i9 A 8 2 19800 3000 21600 3000 2 21600 3000 21600 3600 2 21600 3000 21600 1800 2 21600 1800 24000 1800 2 24000 1800 24000 -2400 2 24000 -2400 24000 -3000 2 24000 -3000 25800 -3000 2 25800 -3000 25800 -2400 1 21600 3000 
+hades.signals.SignalStdLogicVector n15 4 2 i1 Y i0 OPC 2 2 15600 6000 15600 7800 2 15600 7800 18000 7800 0 
+hades.signals.SignalStdLogicVector n0 8 2 multiplicando Y i10 A1 1 2 20400 -4200 20400 -3000 0 
+hades.signals.SignalStdLogicVector n14 8 2 i8 Y i7 A1 4 2 27600 6600 27600 7800 2 27600 7800 25800 7800 2 25800 7800 24600 7800 2 24600 7800 24600 8400 0 
+hades.signals.SignalStdLogicVector n13 8 2 i7 Y produto D 1 2 25200 10200 20400 10200 0 
+hades.signals.SignalStdLogicVector n12 8 2 produto Q i0 A 4 2 20400 12600 20400 13800 2 20400 13800 16800 13800 2 16800 13800 16800 6600 2 16800 6600 19200 6600 0 
+hades.signals.SignalStdLogicVector n11 8 2 i2 Y i0 B 3 2 22200 5400 22200 6000 2 22200 6000 21600 6000 2 21600 6000 21600 6600 0 
+hades.signals.SignalStdLogic1164 n10 4 clk Y multiplier CLK multiplicando1 CLK produto CLK 11 2 10800 3000 9000 3000 2 9000 3000 9000 1800 2 7800 1800 9000 1800 2 18000 1800 9000 1800 2 5400 1800 7800 1800 2 7800 1800 7800 3600 2 7800 3600 1200 3600 2 1200 3600 1200 9000 2 1200 9000 17400 9000 2 17400 9000 17400 11400 2 17400 11400 18600 11400 2 7800 1800 9000 1800 
+[end signals]
+[end]

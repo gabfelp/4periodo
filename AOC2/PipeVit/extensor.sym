@@ -1,0 +1,8 @@
+hades.symbols.BboxRectangle  0 0 4800 1200
+hades.symbols.Rectangle  0 0 4800 1200
+hades.symbols.PortLabel 4650 750 3 extended
+hades.symbols.PortSymbol 4800 600 extended
+hades.symbols.PortLabel 150 750 signal
+hades.symbols.PortSymbol 0 600 signal
+hades.symbols.InstanceLabel 150 1050 extensor
+hades.symbols.ClassLabel 150 450 extensor
